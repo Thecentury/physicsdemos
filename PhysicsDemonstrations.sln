@@ -21,9 +21,15 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PhysicsDemonstrationsSetup"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoTester", "DemoTester\DemoTester.csproj", "{EC3B3B6D-C85F-43E6-AF8A-2328912266F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auxiliary", "Auxiliary\Auxiliary.csproj", "{6A4F234F-65C6-4C2C-9434-ABA868D2CFCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrapherControl", "GrapherControl\GrapherControl.csproj", "{5B315B37-4103-482B-A654-51901DECC8F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImprovedTrackBar", "ImprovedTrackBar\ImprovedTrackBar.csproj", "{F417BCBC-1153-4C53-BC22-05EA81ABA8C5}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 11
+		SccNumberOfProjects = 14
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs03.codeplex.com/
 		SccLocalPath0 = .
@@ -57,6 +63,15 @@ Global
 		SccProjectUniqueName10 = SpectrumOfSignalWithPeriod\u0020-\u0020Demo\u00202\\SpectrumOfSignalWithPeriod\u0020-\u0020Demo\u00202.csproj
 		SccProjectName10 = SpectrumOfSignalWithPeriod\u0020-\u0020Demo\u00202
 		SccLocalPath10 = SpectrumOfSignalWithPeriod\u0020-\u0020Demo\u00202
+		SccProjectUniqueName11 = Auxiliary\\Auxiliary.csproj
+		SccProjectName11 = Auxiliary
+		SccLocalPath11 = Auxiliary
+		SccProjectUniqueName12 = GrapherControl\\GrapherControl.csproj
+		SccProjectName12 = GrapherControl
+		SccLocalPath12 = GrapherControl
+		SccProjectUniqueName13 = ImprovedTrackBar\\ImprovedTrackBar.csproj
+		SccProjectName13 = ImprovedTrackBar
+		SccLocalPath13 = ImprovedTrackBar
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +116,18 @@ Global
 		{EC3B3B6D-C85F-43E6-AF8A-2328912266F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC3B3B6D-C85F-43E6-AF8A-2328912266F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC3B3B6D-C85F-43E6-AF8A-2328912266F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A4F234F-65C6-4C2C-9434-ABA868D2CFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4F234F-65C6-4C2C-9434-ABA868D2CFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4F234F-65C6-4C2C-9434-ABA868D2CFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4F234F-65C6-4C2C-9434-ABA868D2CFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B315B37-4103-482B-A654-51901DECC8F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B315B37-4103-482B-A654-51901DECC8F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B315B37-4103-482B-A654-51901DECC8F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B315B37-4103-482B-A654-51901DECC8F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F417BCBC-1153-4C53-BC22-05EA81ABA8C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F417BCBC-1153-4C53-BC22-05EA81ABA8C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F417BCBC-1153-4C53-BC22-05EA81ABA8C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F417BCBC-1153-4C53-BC22-05EA81ABA8C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
