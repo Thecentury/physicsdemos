@@ -1,0 +1,163 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A4F234F-65C6-4C2C-9434-ABA868D2CFCA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Thecentury</RootNamespace>
+    <AssemblyName>Auxiliary</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="info.lundin.Math, Version=1.0.1973.28449, Culture=neutral, PublicKeyToken=2f7fe9ec5efab85f">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Mathparser\info.lundin.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\Animation.cs" />
+    <Compile Include="Animations\GeneralAnimation.cs" />
+    <Compile Include="Animations\Interpolators.cs" />
+    <Compile Include="Animations\NullAnimation.cs" />
+    <Compile Include="Animations\Trajectories\GeneralTrajectory.cs" />
+    <Compile Include="Animations\Trajectories\Line1DirectionalTrajectory.cs" />
+    <Compile Include="Animations\Trajectories\PointTrajectory.cs" />
+    <Compile Include="AutoDisposablePen.cs" />
+    <Compile Include="AxisDivision.cs" />
+    <Compile Include="Color.cs" />
+    <Compile Include="Diagnostics\MyDebug.cs" />
+    <Compile Include="Drawing\ArrowCap.cs" />
+    <Compile Include="FixedAxisDivision.cs" />
+    <Compile Include="Functions\AnimatedFunction.cs" />
+    <Compile Include="Functions\AnimatedMultiBranchedFunction.cs" />
+    <Compile Include="Functions\AnimatedParametricFunction.cs" />
+    <Compile Include="Functions\DiscreteFunction.cs" />
+    <Compile Include="Functions\Function.cs" />
+    <Compile Include="Functions\GComplicatedFunction.cs" />
+    <Compile Include="Functions\GFormulaFunction.cs" />
+    <Compile Include="Functions\GFunction.cs" />
+    <Compile Include="Functions\GParametricFunction.cs" />
+    <Compile Include="Functions\GraphicalObjects\GeometricFigures\Arrow.cs" />
+    <Compile Include="Functions\GraphicalObjects\GeometricFigures\Circle.cs" />
+    <Compile Include="Functions\GraphicalObjects\GeometricFigures\DoubleArrow.cs" />
+    <Compile Include="Functions\GraphicalObjects\GeometricFigures\Ellipse.cs" />
+    <Compile Include="Functions\GraphicalObjects\GeometricFigures\GGeometricFigure.cs" />
+    <Compile Include="Functions\GraphicalObjects\GGraphicalObject.cs" />
+    <Compile Include="Functions\GraphicalObjects\GeometricFigures\IFillable.cs" />
+    <Compile Include="Functions\GraphicalObjects\IPinnable.cs" />
+    <Compile Include="Functions\GraphicalObjects\GeometricFigures\Line.cs" />
+    <Compile Include="Functions\GraphicalObjects\Picture.cs" />
+    <Compile Include="Functions\GraphicalObjects\GeometricFigures\Rect.cs" />
+    <Compile Include="Functions\GraphicalObjects\GeometricFigures\Square.cs" />
+    <Compile Include="Functions\GraphicalObjects\Writing.cs" />
+    <Compile Include="Functions\GrowingAnimatedParametricFunction.cs" />
+    <Compile Include="Functions\GrowingParametricFunction.cs" />
+    <Compile Include="Functions\GTimeDependentFunction.cs" />
+    <Compile Include="Functions\Location\Location.cs" />
+    <Compile Include="Functions\MultiBranchedFunction.cs" />
+    <Compile Include="Functions\NullFunction.cs" />
+    <Compile Include="Functions\ParametricFunction.cs" />
+    <Compile Include="Functions\PraFunction.cs" />
+    <Compile Include="Functions\ScalarFields\AnimatedBWScalarField.cs" />
+    <Compile Include="Functions\ScalarFields\AnimatedColorScalarField.cs" />
+    <Compile Include="Functions\ScalarFields\BWScalarField.cs" />
+    <Compile Include="Functions\ScalarFields\ColorScalarField.cs" />
+    <Compile Include="Functions\ScalarFields\GScalarField.cs" />
+    <Compile Include="Functions\SimpleFillFunction.cs" />
+    <Compile Include="Functions\SpectrumFunction.cs" />
+    <Compile Include="Functions\TableFunction.cs" />
+    <Compile Include="Functions\UpdatePauser\UpdatePauser.cs" />
+    <Compile Include="Functions\VectorFields\AnimatedConstLengthVectorField.cs" />
+    <Compile Include="Functions\VectorFields\AnimatedVariableLengthVectorField.cs" />
+    <Compile Include="Functions\VectorFields\AnimatedVectorField.cs" />
+    <Compile Include="Functions\VectorFields\ConstLengthVectorField.cs" />
+    <Compile Include="Functions\VectorFields\GAnimatedVectorField.cs" />
+    <Compile Include="Functions\VectorFields\GVectorField.cs" />
+    <Compile Include="Functions\VectorFields\VariableLengthVectorField.cs" />
+    <Compile Include="Functions\VectorFields\VectorField.cs" />
+    <Compile Include="GeometricObject\Arrow.cs" />
+    <Compile Include="GeometricObject\ColorSizeChanger.cs" />
+    <Compile Include="GeometricObject\GeneralChanger.cs" />
+    <Compile Include="GeometricObject\GeneralGeometricObject.cs" />
+    <Compile Include="GeometricObject\GeneralVectorGeometricObject.cs" />
+    <Compile Include="GeometricObject\NullChanger.cs" />
+    <Compile Include="ImprovedAxisDivision.cs" />
+    <Compile Include="Interpolation.cs" />
+    <Compile Include="Layout\ElementaryShift.cs" />
+    <Compile Include="Layout\OLDAutoLayouter.cs" />
+    <Compile Include="Layout\Shift.cs" />
+    <Compile Include="Margin.cs" />
+    <Compile Include="MultipleAlignment.cs" />
+    <Compile Include="MyBitmap\BitmapTransformations.cs" />
+    <Compile Include="MyBitmap\BMPDescriptor.cs" />
+    <Compile Include="MyBitmap\RectangleAnimatedBitmap.cs" />
+    <Compile Include="MyBitmap\Ptrs\ConsequentBitmapPtr.cs" />
+    <Compile Include="MyBitmap\Ptrs\ConsequentNonDestroyingBitmapPtr.cs" />
+    <Compile Include="MyBitmap\GeneralAnimatedBitmap.cs" />
+    <Compile Include="MyBitmap\Ptrs\GeneralBitmapPtr.cs" />
+    <Compile Include="MyBitmap\Ptrs\RectangleBitmapPtr.cs" />
+    <Compile Include="MyBitmap\SimpleAnimatedBitmap.cs" />
+    <Compile Include="Graphics\FillManager.cs" />
+    <Compile Include="Graphics\MyGraphics.cs" />
+    <Compile Include="MyMath\MyMath.cs" />
+    <Compile Include="MyPoint.cs" />
+    <Compile Include="PointTransformation\AnimatedTransformation.cs" />
+    <Compile Include="PointTransformation\GeneralTransformation.cs" />
+    <Compile Include="PointTransformation\Inclination.cs" />
+    <Compile Include="PointTransformation\Polar.cs" />
+    <Compile Include="PointTransformation\Rotation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="Graphics\RegionSaver.cs" />
+    <Compile Include="Screen.cs" />
+    <Compile Include="String\MyString.cs" />
+    <Compile Include="TimeControl\BoundedTimer.cs" />
+    <Compile Include="TimeControl\DiscreteTimer.cs" />
+    <Compile Include="TimeControl\EndlessTimer.cs" />
+    <Compile Include="TimeControl\FormulaTimer.cs" />
+    <Compile Include="TimeControl\GeneralTimer.cs" />
+    <Compile Include="TimeControl\ITimeControl.cs" />
+    <Compile Include="Utils\PerfCounter.cs" />
+    <Compile Include="Vectors\Vector.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
