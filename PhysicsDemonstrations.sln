@@ -1,0 +1,108 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemonstrationMaker", "DemonstrationMaker\DemonstrationMaker.csproj", "{6D182451-21F3-4DF6-B3D8-430BC5BC79CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullDemonstration", "NullDemonstration\NullDemonstration.csproj", "{CEC7D954-8ADA-4878-8F8C-6C690E798B34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicsDemonstrations", "PhysicsDemonstrations\PhysicsDemonstrations.csproj", "{649ECBEA-9548-40B6-BFFD-527D9BC5E1C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMSignal - Demo 3", "AMSignal - Demo 3\AMSignal - Demo 3.csproj", "{0D59060B-F682-49E9-8808-0F93C16A4C12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormingOfSignalFromSpectrum - Demo 1", "FormingOfSignalFromSpectrum - Demo 1\FormingOfSignalFromSpectrum - Demo 1.csproj", "{0200FDC3-5227-4227-B8DD-536D76FB4FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpectrumOfSignalWithPeriod - Demo 2", "SpectrumOfSignalWithPeriod - Demo 2\SpectrumOfSignalWithPeriod - Demo 2.csproj", "{86C12F41-B789-452C-B424-083E2714A770}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demonstration", "Demonstration\Demonstration.csproj", "{36451FAC-968E-45E2-9A94-71C5D1C8E87D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleDemonstration", "SampleDemonstration\SampleDemonstration.csproj", "{FCCDEB98-74BF-4113-B4F5-C22DF9D1EAFD}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PhysicsDemonstrationsSetup", "PhysicsDemonstrationsSetup\PhysicsDemonstrationsSetup.vdproj", "{8F1CD886-D796-4A77-8D60-14A9443F782F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoTester", "DemoTester\DemoTester.csproj", "{EC3B3B6D-C85F-43E6-AF8A-2328912266F1}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs03.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AMSignal\u0020-\u0020Demo\u00203\\AMSignal\u0020-\u0020Demo\u00203.csproj
+		SccProjectName1 = AMSignal\u0020-\u0020Demo\u00203
+		SccLocalPath1 = AMSignal\u0020-\u0020Demo\u00203
+		SccProjectUniqueName2 = Demonstration\\Demonstration.csproj
+		SccProjectName2 = Demonstration
+		SccLocalPath2 = Demonstration
+		SccProjectUniqueName3 = DemonstrationMaker\\DemonstrationMaker.csproj
+		SccProjectName3 = DemonstrationMaker
+		SccLocalPath3 = DemonstrationMaker
+		SccProjectUniqueName4 = DemoTester\\DemoTester.csproj
+		SccProjectName4 = DemoTester
+		SccLocalPath4 = DemoTester
+		SccProjectUniqueName5 = FormingOfSignalFromSpectrum\u0020-\u0020Demo\u00201\\FormingOfSignalFromSpectrum\u0020-\u0020Demo\u00201.csproj
+		SccProjectName5 = FormingOfSignalFromSpectrum\u0020-\u0020Demo\u00201
+		SccLocalPath5 = FormingOfSignalFromSpectrum\u0020-\u0020Demo\u00201
+		SccProjectUniqueName6 = NullDemonstration\\NullDemonstration.csproj
+		SccProjectName6 = NullDemonstration
+		SccLocalPath6 = NullDemonstration
+		SccProjectUniqueName7 = PhysicsDemonstrations\\PhysicsDemonstrations.csproj
+		SccProjectName7 = PhysicsDemonstrations
+		SccLocalPath7 = PhysicsDemonstrations
+		SccProjectUniqueName8 = PhysicsDemonstrationsSetup\\PhysicsDemonstrationsSetup.vdproj
+		SccProjectName8 = PhysicsDemonstrationsSetup
+		SccLocalPath8 = PhysicsDemonstrationsSetup
+		SccProjectUniqueName9 = SampleDemonstration\\SampleDemonstration.csproj
+		SccProjectName9 = SampleDemonstration
+		SccLocalPath9 = SampleDemonstration
+		SccProjectUniqueName10 = SpectrumOfSignalWithPeriod\u0020-\u0020Demo\u00202\\SpectrumOfSignalWithPeriod\u0020-\u0020Demo\u00202.csproj
+		SccProjectName10 = SpectrumOfSignalWithPeriod\u0020-\u0020Demo\u00202
+		SccLocalPath10 = SpectrumOfSignalWithPeriod\u0020-\u0020Demo\u00202
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D182451-21F3-4DF6-B3D8-430BC5BC79CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D182451-21F3-4DF6-B3D8-430BC5BC79CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D182451-21F3-4DF6-B3D8-430BC5BC79CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D182451-21F3-4DF6-B3D8-430BC5BC79CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEC7D954-8ADA-4878-8F8C-6C690E798B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC7D954-8ADA-4878-8F8C-6C690E798B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC7D954-8ADA-4878-8F8C-6C690E798B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC7D954-8ADA-4878-8F8C-6C690E798B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{649ECBEA-9548-40B6-BFFD-527D9BC5E1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649ECBEA-9548-40B6-BFFD-527D9BC5E1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649ECBEA-9548-40B6-BFFD-527D9BC5E1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649ECBEA-9548-40B6-BFFD-527D9BC5E1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D59060B-F682-49E9-8808-0F93C16A4C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D59060B-F682-49E9-8808-0F93C16A4C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D59060B-F682-49E9-8808-0F93C16A4C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D59060B-F682-49E9-8808-0F93C16A4C12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0200FDC3-5227-4227-B8DD-536D76FB4FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0200FDC3-5227-4227-B8DD-536D76FB4FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0200FDC3-5227-4227-B8DD-536D76FB4FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0200FDC3-5227-4227-B8DD-536D76FB4FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C12F41-B789-452C-B424-083E2714A770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C12F41-B789-452C-B424-083E2714A770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C12F41-B789-452C-B424-083E2714A770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C12F41-B789-452C-B424-083E2714A770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36451FAC-968E-45E2-9A94-71C5D1C8E87D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36451FAC-968E-45E2-9A94-71C5D1C8E87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36451FAC-968E-45E2-9A94-71C5D1C8E87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36451FAC-968E-45E2-9A94-71C5D1C8E87D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCCDEB98-74BF-4113-B4F5-C22DF9D1EAFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCCDEB98-74BF-4113-B4F5-C22DF9D1EAFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCCDEB98-74BF-4113-B4F5-C22DF9D1EAFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCCDEB98-74BF-4113-B4F5-C22DF9D1EAFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F1CD886-D796-4A77-8D60-14A9443F782F}.Debug|Any CPU.ActiveCfg = Debug
+		{8F1CD886-D796-4A77-8D60-14A9443F782F}.Release|Any CPU.ActiveCfg = Release
+		{EC3B3B6D-C85F-43E6-AF8A-2328912266F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3B3B6D-C85F-43E6-AF8A-2328912266F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3B3B6D-C85F-43E6-AF8A-2328912266F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3B3B6D-C85F-43E6-AF8A-2328912266F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
