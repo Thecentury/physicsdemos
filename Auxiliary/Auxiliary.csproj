@@ -36,10 +36,6 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="info.lundin.Math, Version=1.0.1973.28449, Culture=neutral, PublicKeyToken=2f7fe9ec5efab85f">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\References\Mathparser\info.lundin.Math.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -151,6 +147,12 @@
     <Compile Include="TimeControl\ITimeControl.cs" />
     <Compile Include="Utils\PerfCounter.cs" />
     <Compile Include="Vectors\Vector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\info.lundin.math\info.lundin.math.csproj">
+      <Project>{AE1BCB03-8131-48B2-B3D0-03EBBD440672}</Project>
+      <Name>info.lundin.math</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
