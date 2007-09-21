@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Collections;
 
 namespace Thecentury {
-	public class FixedAxisDivision : IEnumerable {
+	public class FixedAxisDivision : DivisionBase {
 		float min = 0;
 		float max = 1;
 		float step = 0.5f;
@@ -42,7 +42,7 @@ namespace Thecentury {
 
 		#region IEnumerable Members
 
-		public IEnumerator GetEnumerator() {
+		public override IEnumerator GetEnumerator() {
 			for (float x = min; x <= max + step * 0.5f; x += step) {
 				yield return x;
 			}

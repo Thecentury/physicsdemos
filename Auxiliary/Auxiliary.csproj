@@ -58,6 +58,7 @@
     <Compile Include="AxisDivision.cs" />
     <Compile Include="Color.cs" />
     <Compile Include="Diagnostics\MyDebug.cs" />
+    <Compile Include="DivisionBase.cs" />
     <Compile Include="Drawing\ArrowCap.cs" />
     <Compile Include="FixedAxisDivision.cs" />
     <Compile Include="Functions\AnimatedFunction.cs" />
@@ -113,11 +114,11 @@
     <Compile Include="GeometricObject\GeneralGeometricObject.cs" />
     <Compile Include="GeometricObject\GeneralVectorGeometricObject.cs" />
     <Compile Include="GeometricObject\NullChanger.cs" />
-    <Compile Include="ImprovedAxisDivision.cs" />
     <Compile Include="Interpolation.cs" />
     <Compile Include="Layout\ElementaryShift.cs" />
     <Compile Include="Layout\OLDAutoLayouter.cs" />
     <Compile Include="Layout\Shift.cs" />
+    <Compile Include="LogAxisDivision.cs" />
     <Compile Include="Margin.cs" />
     <Compile Include="MultipleAlignment.cs" />
     <Compile Include="MyBitmap\BitmapTransformations.cs" />

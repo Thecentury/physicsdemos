@@ -11,12 +11,6 @@ namespace Thecentury.ImprovedTrackBar {
 			set { strokes = value; }
 		}
 
-		[Obsolete("Use Strokes instead", true)]
-		public FixedAxisDivision Division {
-			get { return strokes; }
-			set { strokes = value; }
-		}
-
 		FixedAxisDivision numbers = new FixedAxisDivision(0, 10, 5);
 		public FixedAxisDivision Numbers {
 			get { return numbers; }
@@ -40,12 +34,6 @@ namespace Thecentury.ImprovedTrackBar {
 		public bool UseHoles {
 			get { return useHoles; }
 			set { useHoles = value; }
-		}
-
-		[Obsolete("Use Numbers instead", true)]
-		public FixedAxisDivision Marks {
-			get { return numbers; }
-			set { numbers = value; }
 		}
 
 		public float Minimum {
