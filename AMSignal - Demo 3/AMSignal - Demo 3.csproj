@@ -32,18 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Auxiliary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\References\Auxiliary.dll</HintPath>
-    </Reference>
-    <Reference Include="GrapherControl, Version=1.0.2568.18966, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\References\GrapherControl.dll</HintPath>
-    </Reference>
-    <Reference Include="ImprovedTrackBar, Version=1.0.2544.24584, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\References\ImprovedTrackBar.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -69,9 +57,21 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Auxiliary\Auxiliary.csproj">
+      <Project>{6A4F234F-65C6-4C2C-9434-ABA868D2CFCA}</Project>
+      <Name>Auxiliary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Demonstration\Demonstration.csproj">
       <Project>{36451FAC-968E-45E2-9A94-71C5D1C8E87D}</Project>
       <Name>Demonstration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GrapherControl\GrapherControl.csproj">
+      <Project>{5B315B37-4103-482B-A654-51901DECC8F4}</Project>
+      <Name>GrapherControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImprovedTrackBar\ImprovedTrackBar.csproj">
+      <Project>{F417BCBC-1153-4C53-BC22-05EA81ABA8C5}</Project>
+      <Name>ImprovedTrackBar</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
