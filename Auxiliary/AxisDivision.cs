@@ -7,83 +7,6 @@ using Thecentury.Diagnostics;
 using System.Globalization;
 
 namespace Thecentury {
-
-	public struct StrokeInfo {
-		public float x;
-		public int power;
-	}
-
-#if false
-	internal struct CharInfo : IComparable{
-		public char c;
-		public int counter;
-
-		public CharInfo(char c, int counter) {
-			this.c = c;
-			this.counter = counter;
-		}
-
-	#region IComparable Members
-
-#if false
-		public int CompareTo(object obj) {
-			CharInfo ci = (obj as CharInfo);
-
-		}
-#endif
-
-	#endregion
-	}
-#endif
-
-	public class StrokesFormat {
-		string format;
-
-		public StrokesFormat(string format) {
-			this.format = format;
-		}
-
-
-#if false
-		public StrokeInfo[] Apply(float start, float end) {
-			List<CharInfo> chars = new List<CharInfo>();
-			//List<int> numbers = new List<int>();
-			//List<char> chars = new List<char>();
-			
-			foreach (char c in format) {
-				bool found = false;
-				for (int i = 0; i < chars.Count; i++) {
-					if (chars[i].c == c) {
-						chars[i].counter += 1;
-						found = true;
-						break;
-					}
-				}
-				if (!found) {
-					chars.Add(new CharInfo(c, 1));
-				}
-			}
-
-			int number = MyString.NumberOfOccurences(format, 'a');
- 
-			StrokeInfo[] res = new StrokeInfo[format.Length];
-			foreach (char c in format) {
-
-			}
-			return res;
-		}
-#endif
-
-		//private CharInfo Search4Char(List<CharInfo> where, char c) {
-		//    foreach (CharInfo ci in where) {
-		//        if (ci.c == c) {
-		//            return ci;
-		//        }
-		//    }
-		//    return new CharInfo(c, -1);
-		//}
-	}
-
 	[Flags]
 	public enum AxisElements {
 		None = 1,
@@ -121,7 +44,6 @@ namespace Thecentury {
 		RectangleF from;
 		Rectangle to;
 
-		// TODO Usage of all axis elements
 		AxisElements xelems = AxisElements.All;
 		AxisElements yelems = AxisElements.All;
 		public AxisElements XElems {
@@ -196,8 +118,6 @@ namespace Thecentury {
 		public bool drawXValues = true;
 		public bool drawYValues = true;
 
-
-		// TODO Uniform Division
 		public static FloatingAxisDivision UniformDivision(Rectangle to, float xstart, float ystart, float step, bool isX) {
 			float x_div_y = to.Width / (float)to.Height;
 			FloatingAxisDivision res;

@@ -42,14 +42,6 @@ namespace Thecentury.ImprovedTrackBar {
 	/// 
 	/// </summary>
 	public sealed partial class ImprovedTrackBar : UserControl {
-		GeometricObject.Arrow arrow1 = new Thecentury.GeometricObject.Arrow(Direction.ToSouth);
-
-		//Thecentury.MyGraphics.FillManager fillManager = new Thecentury.MyGraphics.FillManager();
-		//public Thecentury.MyGraphics.FillManager FillManager {
-		//    get { return fillManager; }
-		//    set { fillManager = value; Repaint(); }
-		//}
-
 		public void Repaint() {
 			OnPaint(null);
 		}
@@ -192,9 +184,6 @@ namespace Thecentury.ImprovedTrackBar {
 			context = BufferedGraphicsManager.Current;
 			context.MaximumBuffer = new Size(this.Width + 1, this.Height + 1);
 			grafx = context.Allocate(this.CreateGraphics(), Bounds);
-			//arrow1.Center = new Point(50, 25);
-			//arrow1.Size = new Size(20, 40);
-			//arrow1.Changer = new ColorSizeChanger(Color.White, Color.Black, new Size(10, 40), new Size(10, 40));
 		}
 
 		void GeneralPaint(Graphics g) {
@@ -209,7 +198,6 @@ namespace Thecentury.ImprovedTrackBar {
 				// TODO Добавить возможность писать комментарий к значению
 				DrawNumericValue(g);
 			}
-			//arrow1.Paint(g, MyPoint.NewZero(Cursor.Position, Location));
 		}
 
 		private void DrawCurrentValue(Graphics g) {
@@ -256,11 +244,9 @@ namespace Thecentury.ImprovedTrackBar {
 					g.DrawLine(pen, x, rAxis.Y - hStrokes / 2, x, rAxis.Y + hStrokes / 2);
 				}
 			}
-			//throw new Exception("The method or operation is not implemented.");
 		}
 
 		private void DrawNumericValue(Graphics g) {
-
 			string st = MyString.ConvertToString(CurrentValue, info);
 			string st_max = MyString.ConvertToString(tracker.Maximum, info);
 			Font font = new Font(fontName, numericValueFontSize);
@@ -278,7 +264,6 @@ namespace Thecentury.ImprovedTrackBar {
 		}
 
 		private void DrawHoles(Graphics g) {
-			//			tracker.Holes = new float[1] { 0.5f };
 			RectangleF from = new RectangleF(tracker.Minimum, 0, tracker.Length, 0);
 			float x;
 			using (pen.Pen = new Pen(cHoles, wHoles)) {
@@ -287,7 +272,6 @@ namespace Thecentury.ImprovedTrackBar {
 					g.DrawLine(pen, x, rAxis.Y - hHoleStroke / 2, x, rAxis.Y + hHoleStroke / 2);
 				}
 			}
-			//throw new Exception("The method or operation is not implemented.");
 		}
 
 		private void DrawValues(Graphics g) {
@@ -309,7 +293,6 @@ namespace Thecentury.ImprovedTrackBar {
 
 			font.Dispose();
 			brush.Dispose();
-			//throw new Exception("The method or operation is not implemented.");
 		}
 
 		private void DrawAxis(Graphics g) {
@@ -337,11 +320,7 @@ namespace Thecentury.ImprovedTrackBar {
 		}
 
 		private void Clear(Graphics g) {
-			// todo
 			g.Clear(Color.White);
-			//using (Brush brush = fillManager.GenerateBrush()) {
-			//    g.FillRectangle(brush, this.DisplayRectangle);
-			//}
 		}
 
 		protected override void OnPaintBackground(PaintEventArgs e) { }

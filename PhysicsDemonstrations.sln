@@ -27,6 +27,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrapherControl", "GrapherCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImprovedTrackBar", "ImprovedTrackBar\ImprovedTrackBar.csproj", "{F417BCBC-1153-4C53-BC22-05EA81ABA8C5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1608A738-721B-4B84-8262-C3029BA2FB68}"
+	ProjectSection(SolutionItems) = preProject
+		Правки.doc = Правки.doc
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 14
