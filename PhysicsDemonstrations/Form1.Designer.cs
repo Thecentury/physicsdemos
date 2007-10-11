@@ -37,10 +37,11 @@ namespace PhysicsDemonstrations
 			this.CloseDemoButton = new System.Windows.Forms.Button();
 			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
 			this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+			this.îÑîçäàòåëÿõToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.ôàéëToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
-			this.îÑîçäàòåëÿõToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.noLabel = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.toolStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -120,13 +121,20 @@ namespace PhysicsDemonstrations
 			this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
 			this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-			this.toolStripDropDownButton1.Size = new System.Drawing.Size(46, 22);
+			this.toolStripDropDownButton1.Size = new System.Drawing.Size(49, 22);
 			this.toolStripDropDownButton1.Text = "Ôàéë";
+			// 
+			// îÑîçäàòåëÿõToolStripMenuItem
+			// 
+			this.îÑîçäàòåëÿõToolStripMenuItem.Name = "îÑîçäàòåëÿõToolStripMenuItem";
+			this.îÑîçäàòåëÿõToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+			this.îÑîçäàòåëÿõToolStripMenuItem.Text = "Î ñîçäàòåëÿõ...";
+			this.îÑîçäàòåëÿõToolStripMenuItem.Click += new System.EventHandler(this.îÑîçäàòåëÿõToolStripMenuItem_Click);
 			// 
 			// ôàéëToolStripMenuItem
 			// 
 			this.ôàéëToolStripMenuItem.Name = "ôàéëToolStripMenuItem";
-			this.ôàéëToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+			this.ôàéëToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
 			this.ôàéëToolStripMenuItem.Text = "Âûõîä";
 			this.ôàéëToolStripMenuItem.Click += new System.EventHandler(this.ôàéëToolStripMenuItem_Click);
 			// 
@@ -152,18 +160,24 @@ namespace PhysicsDemonstrations
 			this.button2.UseVisualStyleBackColor = true;
 			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
-			// îÑîçäàòåëÿõToolStripMenuItem
+			// noLabel
 			// 
-			this.îÑîçäàòåëÿõToolStripMenuItem.Name = "îÑîçäàòåëÿõToolStripMenuItem";
-			this.îÑîçäàòåëÿõToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-			this.îÑîçäàòåëÿõToolStripMenuItem.Text = "Î ñîçäàòåëÿõ...";
-			this.îÑîçäàòåëÿõToolStripMenuItem.Click += new System.EventHandler(this.îÑîçäàòåëÿõToolStripMenuItem_Click);
+			this.noLabel.AutoSize = true;
+			this.noLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.noLabel.ForeColor = System.Drawing.Color.Red;
+			this.noLabel.Location = new System.Drawing.Point(14, 70);
+			this.noLabel.Name = "noLabel";
+			this.noLabel.Size = new System.Drawing.Size(539, 39);
+			this.noLabel.TabIndex = 8;
+			this.noLabel.Text = "Äîñòóïíûõ äåìîíñòğàöèé íåò!";
+			this.noLabel.Visible = false;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1006, 746);
+			this.Controls.Add(this.noLabel);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.toolStrip1);
@@ -198,6 +212,7 @@ namespace PhysicsDemonstrations
         private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.ToolStripMenuItem îÑîçäàòåëÿõToolStripMenuItem;
+		private System.Windows.Forms.Label noLabel;
      
     }
 }

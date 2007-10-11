@@ -44,13 +44,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="info.lundin.Math, Version=1.0.1973.28449, Culture=neutral, PublicKeyToken=2f7fe9ec5efab85f">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\References\Mathparser\info.lundin.Math.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -87,6 +84,10 @@
     <ProjectReference Include="..\Auxiliary\Auxiliary.csproj">
       <Project>{6A4F234F-65C6-4C2C-9434-ABA868D2CFCA}</Project>
       <Name>Auxiliary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\info.lundin.math\info.lundin.math.csproj">
+      <Project>{AE1BCB03-8131-48B2-B3D0-03EBBD440672}</Project>
+      <Name>info.lundin.math</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
