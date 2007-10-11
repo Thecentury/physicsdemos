@@ -317,7 +317,7 @@ namespace Thecentury {
 		#endregion
 
 
-		private System.Timers.Timer redrawTimer;
+		private System.Timers.Timer redrawTimer = null;
 
 		private void SetFrom(RectangleF value) {
 			from = value;

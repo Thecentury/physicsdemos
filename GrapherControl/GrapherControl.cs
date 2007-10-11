@@ -19,13 +19,11 @@ namespace Thecentury {
 		public static bool usescr = true;
 
 		bool controlMove = false;
-		bool controlResize = false;
 		bool rectangleZooming = false;
 		bool middleButtonMove = false;
 		Rectangle zoomRect;
 
 		Point prevPos;
-		Size prevSize;
 
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public AllowedDirections AllowResize = AllowedDirections.All;
@@ -591,7 +589,6 @@ namespace Thecentury {
 				flatMoveAnimation.Occured += delegate() { Invalidate(); };
 			}
 			controlMove = false;
-			controlResize = false;
 		}
 
 		private void GrapherControl_Resize(object sender, EventArgs e) {

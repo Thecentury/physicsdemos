@@ -9,7 +9,6 @@ using System.IO;
 
 namespace PhysicsDemonstrations {
 	public partial class Form1 : Form {
-		Label NoDemoLabel1 = new Label();
 		NDemoList demonstrations = new NDemoList();
 		Control currentDemoControl;
 
@@ -23,19 +22,8 @@ namespace PhysicsDemonstrations {
 		}
 
 		private void PlaceDemos() {
-			if (demonstrations.IsEmpty) {
-				NoDemoLabel1.AutoSize = true;
-				NoDemoLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-				NoDemoLabel1.ForeColor = System.Drawing.Color.Red;
-				NoDemoLabel1.Location = new System.Drawing.Point(14, 70);
-				NoDemoLabel1.Name = "NoDemoLabel1";
-				NoDemoLabel1.Size = new System.Drawing.Size(528, 39);
-				NoDemoLabel1.TabIndex = 2;
-				NoDemoLabel1.Text = "Доступных демонстраций нет";
-				NoDemoLabel1.Visible = false;
-				this.Controls.Add(this.NoDemoLabel1);
-			}
-			else {
+			noLabel.Visible = demonstrations.IsEmpty;
+			if (!demonstrations.IsEmpty) {
 				foreach (Control c in demonstrations.Controls) {
 					Controls.Add(c);
 				}
@@ -77,7 +65,7 @@ namespace PhysicsDemonstrations {
 			Controls.Remove(pictureBox1);
 
 			label1.Visible = true;
-			NoDemoLabel1.Visible = !demonstrations.IsEmpty;
+			noLabel.Visible = demonstrations.IsEmpty;
 			demonstrations.EnableControls();
 
 			this.RefreshButton.Visible = true;
@@ -118,15 +106,20 @@ namespace PhysicsDemonstrations {
 		/// <param name="e"></param>
 		private void CloseDemoButton_Click(object sender, EventArgs e) {
 			Controls.Remove(currentDemoControl);
+			
+			this.SuspendLayout();
 			foreach (Control c in Controls) {
 				c.Enabled = true;
 				c.Visible = true;
 			}
+			noLabel.Visible = demonstrations.IsEmpty;
 
 			this.CloseDemoButton.Visible = false;
 			this.CloseDemoButton.Enabled = false;
 			this.button1.Enabled = false;
 			this.button1.Visible = false;
+
+			this.ResumeLayout();
 		}
 
 		/// <summary>
@@ -163,16 +156,10 @@ namespace PhysicsDemonstrations {
 			}
 		}
 
-		private void label2_Click(object sender, EventArgs e) {
-			//timer1_Tick(null, null);
-		}
-
 		private void button2_Click(object sender, EventArgs e) {
+			timer1.Enabled = false;
+			timer1.Dispose();
 			timer1_Tick(null, null);
-		}
-
-		private void toolStripSplitButton1_ButtonClick(object sender, EventArgs e) {
-
 		}
 
 		private void оСоздателяхToolStripMenuItem_Click(object sender, EventArgs e) {
